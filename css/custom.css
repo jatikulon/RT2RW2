@@ -1,0 +1,44 @@
+body { 
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; 
+}
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@media print {
+    .no-print { display: none !important; }
+    .print-only { display: block !important; }
+    body { background: white; }
+}
+.print-only { display: none; }
+
+/* Custom Styles Input Bulan Matriks */
+.month-input {
+    width: 38px;
+    height: 32px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+    transition: all 0.2s;
+}
+.month-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.month-input[data-val="01"], .month-input[data-val="1"]  { background-color: #fce7f3; color: #db2777; border-color: #fbcfe8; }
+.month-input[data-val="02"], .month-input[data-val="2"]  { background-color: #dcfce7; color: #16a34a; border-color: #bbf7d0; }
+.month-input[data-val="03"], .month-input[data-val="3"]  { background-color: #fef9c3; color: #ca8a04; border-color: #fef08a; }
+.month-input[data-val="04"], .month-input[data-val="4"]  { background-color: #e0f2fe; color: #0284c7; border-color: #bae6fd; }
+.month-input[data-val="05"], .month-input[data-val="5"]  { background-color: #f3e8ff; color: #9333ea; border-color: #e9d5ff; }
+.month-input[data-val="06"], .month-input[data-val="6"]  { background-color: #ffedd5; color: #ea580c; border-color: #fed7aa; }
+.month-input[data-val="07"], .month-input[data-val="7"]  { background-color: #cffafe; color: #0891b2; border-color: #a5f3fc; }
+.month-input[data-val="08"], .month-input[data-val="8"]  { background-color: #e0e7ff; color: #4f46e5; border-color: #c7d2fe; }
+.month-input[data-val="09"], .month-input[data-val="9"]  { background-color: #fae8ff; color: #c026d3; border-color: #f5d0fe; }
+.month-input[data-val="10"]                              { background-color: #ffe4e6; color: #e11d48; border-color: #fecdd3; }
+.month-input[data-val="11"]                              { background-color: #ccfbf1; color: #0d9488; border-color: #99f6e4; }
+.month-input[data-val="12"]                              { background-color: #d1fae5; color: #059669; border-color: #a7f3d0; }
+.month-input[data-val="libur"], .month-input[data-val="LIBUR"] { background-color: #f1f5f9; color: #94a3b8; border-color: #e2e8f0; font-weight: 400; }
